@@ -1,15 +1,7 @@
 <template>
   <form @submit.prevent>
-    <my-input
-      v-model="post.title"
-      type="text"
-      placeholder="Название"
-    />
-    <my-input
-      v-model="post.body"
-      type="text"
-      placeholder="Описание"
-    />
+    <my-input v-model="post.title" type="text" placeholder="Название" />
+    <my-input v-model="post.body" type="text" placeholder="Описание" />
     <my-button class="myBtn" @click="createPost">Добавить</my-button>
   </form>
 </template>
@@ -33,7 +25,7 @@ export default {
         body: "",
       };
     },
-  },
+  }
 };
 </script>
 
@@ -43,9 +35,7 @@ form {
   flex-direction: column;
 }
 
-
-
-.myBtn{
+.myBtn {
   align-self: flex-end;
   margin-top: 10px;
 }
